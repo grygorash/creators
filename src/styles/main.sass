@@ -1,0 +1,573 @@
+//body
+//  font-family: 'Roboto', sans-serif
+//
+//.header
+//  max-width: 1240px
+//  width: 100%
+//  margin: 0 auto
+//  .top-header
+//    width: 100%
+//    padding: 35px 0
+//    border-bottom: 1px solid #dddfdf
+//    div,
+//    p,
+//    input
+//      display: inline-block
+//      vertical-align: middle
+//    .logo
+//      background: url("../img/logo.png")
+//      width: 247px
+//      height: 30px
+//      position: relative
+//      margin-right: 43px
+//      &:after
+//        position: absolute
+//        content: 'Интернет-магазин «Благой арт»'
+//        color: #747688
+//        font-size: 13px
+//        top: 35px
+//    .search
+//      max-width: 496px
+//      width: 100%
+//      position: relative
+//      margin-right: 92px
+//      &:after
+//        position: absolute
+//        content: ''
+//        background: url("../img/search-icn.png")
+//        width: 18px
+//        height: 18px
+//        right: 10px
+//        top: 12px
+//      input
+//        height: 40px
+//        border: 1px solid #b9b8bd
+//        border-radius: 4px
+//        font-size: 14px
+//        width: 100%
+//        padding: 0 40px 0 10px
+//    .tel
+//      color: #181616
+//      font-size: 23px
+//      margin-right: 7px
+//    .schedule
+//      p
+//        font-size: 14px
+//        color: #2b3056
+//        display: block
+//        &:first-child
+//          color: #cb944c
+//
+//  .bottom-header
+//    font-weight: bold
+//    color: #181818
+//    font-size: 14px
+//    padding: 20px 0
+//    width: 100%
+//    display: flex
+//    justify-content: space-between
+//    align-items: center
+//    border-bottom: 1px solid #dddfdf
+//    &_nav
+//      .navigation
+//      li
+//        display: inline-block
+//        cursor: pointer
+//        transition: all .3s
+//        margin-right: 25px
+//        &:hover
+//          color: #cb944c
+//      .dropdown
+//        margin: 0 40px
+//        position: relative
+//        &:hover .dropdown-open
+//          color: #181818
+//          visibility: visible
+//          opacity: 1
+//        .dropdown-open
+//          position: absolute
+//          z-index: 2
+//          visibility: hidden
+//          padding: 35px 0 0 0
+//          opacity: 0
+//          transition: all .3s
+//          left: -40px
+//          ul
+//            width: 244px
+//            box-shadow: 2px 3px 1px rgba(108, 104, 104, 0.33)
+//            border-radius: 3px
+//            border: 1px solid #dddfdf
+//            background-color: #fff
+//            li
+//              margin: 0
+//              padding: 10px 0 10px 30px
+//              font-size: 14px
+//              font-weight: 100
+//              display: block
+//              transition: all .3s
+//              position: relative
+//              &:before
+//                content: ''
+//                position: absolute
+//                width: 6px
+//                height: 6px
+//                border: 1px solid #cb944c
+//                border-radius: 50%
+//                left: 10px
+//                top: 14px
+//              &:hover
+//                color: #cb944c
+//                background-color: #e3e3e4
+//          .sub-dropdown
+//            &:after
+//              content: ''
+//              position: absolute
+//              background: url("../img/slider-btn.png") 6px 0
+//              width: 7px
+//              height: 11px
+//              background-size: cover
+//              right: 10px
+//              top: 13px
+//            &:hover .sub-dropdown-open
+//              color: #181818
+//              visibility: visible
+//              opacity: 1
+//            .sub-dropdown-open
+//              position: absolute
+//              left: 245px
+//              top: 0
+//              visibility: hidden
+//              opacity: 0
+//              transition: all .3s
+//              p
+//                color: #cb944c
+//                font-size: 16px
+//                font-weight: 700
+//                padding: 10px 20px
+//        &:before
+//          content: ''
+//          background: url("../img/menu-icn.png")
+//          width: 16px
+//          height: 12px
+//          left: -25px
+//          top: 2px
+//          position: absolute
+//        &:after
+//          content: ''
+//          background: url("../img/caret-down-icn.png")
+//          width: 11px
+//          height: 7px
+//          right: -18px
+//          top: 5px
+//          position: absolute
+//        &:last-child
+//          margin-right: 0
+//    &_basket
+//      margin-right: 15px
+//      .basket
+//        position: relative
+//        display: inline-block
+//        cursor: pointer
+//        margin-right: 45px
+//        &:before
+//          position: absolute
+//          content: ''
+//          background: url("../img/basket-icn.png")
+//          width: 23px
+//          height: 23px
+//          left: -30px
+//        span
+//          color: #fff
+//          background-color: #cb944c
+//          border-radius: 50%
+//          display: inline-block
+//          padding: 3px 4px
+//        p
+//          transition: all .3s
+//          display: inline-block
+//          &:hover
+//            color: #cb944c
+//      .user
+//        position: relative
+//        cursor: pointer
+//        display: inline-block
+//        transition: all .3s
+//        &:hover
+//          color: #cb944c
+//        &:before
+//          position: absolute
+//          content: ''
+//          background: url("../img/user-icn.png")
+//          width: 19px
+//          height: 17px
+//          left: -25px
+//
+//.slider
+//  margin: 40px auto
+//  max-width: 1354px
+//  height: 326px
+//  width: 100%
+//  background: url("../img/slider-img.jpg") no-repeat center
+//  display: flex
+//  align-items: center
+//  position: relative
+//  h2
+//    max-width: 500px
+//    color: #fff
+//    background-color: #d2a66b
+//    opacity: 0.88
+//    padding: 20px 35px
+//    font-weight: 100
+//    font-size: 36px
+//    margin-left: 70px
+//  .prev-btn,
+//  .next-btn
+//    height: 128px
+//    position: absolute
+//    background-color: #d2a66b
+//    cursor: pointer
+//    width: 37px
+//    top: calc(50% - 64px)
+//    opacity: 0.88
+//    transition: all .3s
+//    &:hover
+//      background-color: #fff
+//    &:hover:before
+//      background-position: -31px 0
+//    &:before
+//      position: absolute
+//      content: ''
+//      background: url("../img/slider-btn.png")
+//      width: 14px
+//      height: 28px
+//      top: calc(50% - 14px)
+//      left: calc(50% - 7px)
+//  .prev-btn
+//    left: 0
+//  .next-btn
+//    right: 0
+//    &:hover:before
+//      background-position: -48px 0
+//    &:before
+//      background-position: -16px 0
+//  .dots
+//    position: absolute
+//    bottom: -50px
+//    left: calc(50% - 64px)
+//    div
+//      width: 18px
+//      height: 18px
+//      background-color: #cb944c
+//      opacity: 0.33
+//      display: inline-block
+//      margin: 0 11px
+//      border-radius: 50%
+//      cursor: pointer
+//      transition: all .3s
+//      &:hover
+//        opacity: 1
+//    .active
+//      opacity: 1
+
+//.grid
+//  display: grid
+//  padding: 20px
+//  grid-gap: 20px
+//  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+//  //justify-items: center
+//  //align-items: start
+//  //grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr)
+//  grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto)
+//  //grid-auto-flow: column
+//  //div:nth-child(1)
+//  //  grid-column: 1 / -1
+//  //  grid-row: 2
+//  //div:nth-child(3)
+//  //  grid-column: 1
+//  //  grid-row: 3
+//  div:nth-child(1)
+//    align-self: start
+//    justify-self: center
+//  div
+//    background-color: #293050
+//    color: #fff
+//    border: 1px solid black
+//    border-radius: 5px
+//    padding: 15px
+//  div:nth-child(odd)
+//    background-color: #475278
+
+
+
+//.grid
+//  display: grid
+//  grid-gap: 20px
+//  padding: 20px
+//  grid-template-areas: "header header header" "sidebar content content" "footer footer footer"
+//  grid-template-columns: 2fr 4fr
+//  > *
+//    background-color: #293050
+//    color: #fff
+//    border: 1px solid black
+//    border-radius: 5px
+//    padding: 15px
+//  header
+//    grid-area: header
+//  footer
+//    grid-area: footer
+//  article
+//    grid-area: content
+//  aside
+//    grid-area: sidebar
+//    display: grid
+//    grid-template-columns: 1fr 1fr
+//    grid-gap: 5px
+//    div
+//      background-color: #475278
+//      padding: 10px
+//      border-radius: 10px
+//    div:first-child
+//      grid-column-start: 1
+//@media(max-width: 640px)
+//  .grid
+//    grid-template-columns: 1fr
+//    grid-template-areas: "header" "content" "sidebar" "footer"
+
+@import 'normalize'
+
+$accent: #ED650D
+$dark: #293943
+$light: #EEEDEF
+$grey: #4F5963
+$gutter: 20px
+@font-face
+  font-family: 'Raleway', sans-serif
+@font-face
+  font-family: 'Roboto', sans-serif
+body
+  font-family: 'Raleway', sans-serif
+.button
+  background-color: $accent
+  color: #fff
+  font-family: 'Roboto', sans-serif
+  transition: all .3s
+  font-size: 20px
+  text-transform: uppercase
+  width: 200px
+  height: 50px
+  &:hover
+    background-color: darken($accent, 10%)
+.button-grey
+  background-color: $grey
+  margin-left: 20px
+  &:hover
+    background-color: lighten($grey, 10%)
+.layout
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background-color: $dark
+    opacity: .92
+.container
+  max-width: 1200px
+  margin: auto
+  padding: 0 20px
+
+
+.main-header
+  height: 100vh
+  min-height: 600px
+  background-size: cover
+  background-position: center
+  position: relative
+  align-content: center
+  .scroll
+    position: absolute
+    width: 25px
+    height: 30px
+    background-image: url(../img/scroll.png)
+    background-size: cover
+    bottom: 40px
+    left: calc(50% - 12.5px)
+    animation: scroll 2s infinite
+    @keyframes scroll
+      0%
+        bottom: 40px
+      30%
+        bottom: 30px
+      100%
+        bottom: 40px
+  .header-content
+    z-index: 1
+    color: #fff
+    text-align: center
+    padding: 60px $gutter
+    h1
+      font-size: 60px
+      font-family: 'Roboto', sans-serif
+      margin: 20px 0
+    .header-buttons
+      margin-top: 20px
+.portfolio-section
+  padding: 10px
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 10px
+  .portfolio-item
+    min-height: 300px
+    text-align: center
+    align-content: center
+    padding: 10px
+    font-size: 20px
+    color: #fff
+    font-weight: bold
+    position: relative
+    background-size: cover
+    cursor: pointer
+    transition: all .3s
+    &:hover span:before
+      opacity: 1
+      content: ''
+      transition: all .3s
+      width: 250px
+      height: 100px
+      left: calc(50% - 125px)
+      top: calc(50% - 50px)
+    &:hover
+      color: $accent
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background-color: $dark
+        opacity: .92
+    &:before
+      position: absolute
+      content: ''
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-color: $dark
+      opacity: .65
+      transition: all .3s
+    span
+      z-index: 1
+      position: relative
+      &:before
+        border: 2px solid #ED650D
+        content: ''
+        position: absolute
+        opacity: 0
+        width: 100%
+        height: 280px
+        left: 0
+        top: -130px
+    &:nth-child(1)
+      grid-column: 1 / 3
+    &:nth-child(5)
+      grid-column: 2 / 4
+    &:nth-child(6)
+      grid-column: 4
+      grid-row: 2 / 4
+.button-case
+  grid-column: 1 / 5
+  padding: $gutter 10px $gutter
+.ready-section
+  padding: 80px 0
+  background-color: $light
+  .container
+    grid-template-columns: 1fr 1fr
+    align-items: center
+    .ready-left
+      border-right: 1px solid #dadada
+      h2
+        font-size: 34px
+        font-weight: 800
+        color: $dark
+        line-height: 1.2
+      p
+        font-size: 20px
+        padding-top: 30px
+.form-section
+  padding: 30px 0
+  background-color: $dark
+  form
+    grid-gap: $gutter
+    grid-template-columns: 2fr 2fr 2fr 1fr
+    input
+      padding: 15px 20px
+      font-style: italic
+      background-color: lighten($dark, 5%)
+      transition: all .3s
+      width: 100%
+      &:focus
+        background-color: $light
+      &:hover
+        background-color: $light
+      &::placeholder
+        color: lighten($dark, 25%)
+.blog-section
+  h2
+    color: $dark
+    padding: 50px $gutter
+    font-size: 34px
+    font-weight: 800
+.blog
+  grid-gap: $gutter
+  grid-template-columns: repeat(4, 1fr)
+  .blog-item
+    background-color: $light
+    text-align: center
+    text-decoration: none
+    color: $dark
+    transition: all .3s
+    &:nth-child(3)
+      grid-column: 3 / 5
+    &:nth-child(4)
+      grid-column: 1 / 3
+    &:hover
+      background-color: darken($light, 5%)
+      .blog-item-top
+        img
+          transform: scale(1.1, 1.1)
+      .blog-item-bottom
+        color: $dark
+    .blog-item-top
+      overflow: hidden
+      height: 270px
+      img
+        height: 270px
+        background-size: cover
+        background-position: center
+        transition: all .3s
+    .blog-item-bottom
+      color: #666
+      padding: 30px 10px
+      line-height: 1.5
+      h4
+        text-transform: uppercase
+        padding: 0 0 20px 0
+        font-size: 18px
+      p
+        font-size: 18px
+.creators-section
+  font-size: 28px
+  padding: 50px 0 20px
+  background-color: $dark
+  color: lighten($grey, 10%)
+  span
+    font-size: 36px
+    color: lighten($grey, 30%)
+  p
+    font-size: 22px
+    padding-top: 20px
+    font-weight: bold
+
+@import "media"
