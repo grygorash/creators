@@ -1,6 +1,15 @@
 ///*==========  Desktop First  ==========*/
 //
 ///* Large Devices, Wide Screens */
+@media only screen and (min-width: 1024px)
+  ::-webkit-scrollbar-track
+    background-color: #EEEDEF
+  ::-webkit-scrollbar
+    width: 8px
+    background-color: transparent
+  ::-webkit-scrollbar-thumb
+    border-radius: 10px
+    background-color: #ED650D
 @media only screen and (max-width: 1024px)
   .main-header
     height: 500px
@@ -68,13 +77,7 @@
   .portfolio-section
     grid-template-columns: 1fr
     .portfolio-item
-      &:nth-child(1)
-        grid-column: initial
-      &:nth-child(4)
-        grid-column: initial
-      &:nth-child(5)
-        grid-column: initial
-      &:nth-child(6)
+      &:nth-child(1), &:nth-child(4), &:nth-child(5), &:nth-child(6)
         grid-column: initial
   .button-case
     grid-column: 1 / 2
